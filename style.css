@@ -1,17 +1,16 @@
-/* Reset e impostazioni di base */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
+/*utilizzo il font Montserrat modifico anche html con tag style in head  */
 body, html {
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-/* Header: in cima, sfondo nero, altezza aumentata a 155px */
+/* Header: in cima, sfondo nero tendende al verde, altezza a 155px */
 .page-header {
-  background-color: #000;
+  background-color: #010b01;
   color: #fff;
   height: 155px;
   display: flex;
@@ -23,7 +22,8 @@ body, html {
 
 .header-content h1 {
   font-size: 2.5em;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
+  font-style: oblique;
 }
 
 .header-content h3 {
@@ -33,7 +33,8 @@ body, html {
 }
 
 .header-content p {
-  font-size: 1em;
+  font-size: 1.1em;
+  font-style: oblique;
 }
 
 /* Wrapper: inizia subito sotto l'header (nessun margine superiore) */
@@ -44,8 +45,8 @@ body, html {
 
 /* Sidebar: inizia subito sotto l'header, toccando il bordo superiore della sezione wrapper */
 .sidebar {
-  width: 300px;
-  background-color: #000;
+  width: 285px;
+  background-color: #010b01;
   color: #fff;
   padding: 75px;
 }
@@ -60,7 +61,7 @@ body, html {
 }
 
 .sidebar h2 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-bottom: 10px;
   border-bottom: 2px solid #555;
   padding-bottom: 10px;
@@ -102,6 +103,16 @@ body, html {
   margin-bottom: 10px;
 }
 
+/* con questa classe controllo il font del tag p "riguardante la descrizione" */
+.summary p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  font-weight: 450; /* spessore sul font */
+  /* padding: 17px; */
+  
+ 
+}
+
 /* Esperienza e Formazione */
 .experience h2,
 .education h2 {
@@ -133,15 +144,15 @@ body, html {
   line-height: 1.6;
 }
 
-/* Footer: sfondo grigio, testo bianco, altezza aumentata di 2cm tramite padding,
-   e unito visivamente con il sidebar (nessun margine-top) */
+/* campo footer, sfondo nero tendende al verde */
 .footer {
-  background-color: #000;
+  background-color: #010b01;
   color: #fff;
   text-align: center;
   padding: 20px;
-  font-size: 0.9em;
+  font-size: 1em;
   margin-top: 0;
+  font-style: oblique;
 }
 
 /* Responsive: layout a colonna per schermi piccoli */
@@ -157,3 +168,29 @@ body, html {
     padding: 20px;
   }
 }
+
+nav ul { 
+  list-style-type: none; /*Rimuovo i pallini dalla lista */
+  padding: 0; /*Rimuove il padding predefinito della lista */
+  margin: 0; /*Rimuove il margine predefinito della lista */
+  }
+ 
+
+nav ul a {
+  display: block; /*ogni link occupa un'intera riga */
+  margin-bottom: 4px; /* Aggiungo un po' di spazio sotto ogni link */
+  text-decoration: none;
+  color:rgb(53, 79, 77); 
+  
+}
+
+nav ul a:hover {
+  color: rgb(230, 186, 91); /* Cambio colore al passaggio del mouse */
+}
+
+/* Cambio colore al passaggio del mouse nel settore contatti*/
+.contact a:hover{
+
+  color: green;   
+}
+
